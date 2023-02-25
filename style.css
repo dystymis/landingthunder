@@ -1,0 +1,81 @@
+:root {
+    --shadow-color: #FF9E9E;
+    --shadow-color-light: white;
+  }
+
+#bg-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    transform: scale(2);
+    filter: blur(2.5px)
+  }
+
+.btns{
+    color: rgba(255, 255, 255, 1);
+    font-family: Monoton;
+    font-weight: unset;
+    font-size: 17px;
+    overflow: visible;
+}
+
+  #text1{
+    color: rgba(255, 255, 255, .1);
+    font-family: Monoton;
+    font-weight: unset;
+    font-size: 65px;
+    transition: 10s;
+}
+
+#text1:hover{
+    transform: scale3d(1, 1, 1);
+}
+
+#rekt{
+    width:633px;
+    height:100px;
+    position: relative;
+    background: none;
+    backdrop-filter: blur(250px);
+    background-repeat: repeat;
+    border: 10px dotted rgba(0, 0, 0, .1);
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 2s;
+}
+
+#rekt:not(:hover){
+    overflow: hidden;
+}
+
+#rekt:hover{
+    border-bottom-right-radius: 25%;
+    border-top-left-radius: 25%;
+    overflow: hidden;
+}
+
+#btn{
+    width:160px;
+    height:40px;
+    position: relative;
+    background: none;
+    backdrop-filter: blur(100px);
+    background-repeat: repeat;
+    border: 2px dotted rgba(0, 0, 0, .1);
+    border-bottom-right-radius: 0%;
+    border-top-left-radius: 0%;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3px;
+}
